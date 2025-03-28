@@ -31,7 +31,7 @@ class Foco{
                       std::cout<<"explote"<<std::endl;
                 break;
             }
-            //std::cout << ". -----HOLA MUNDO" << estado << std::endl;
+            std::cout << ". -----HOLA MUNDO" << estado << std::endl;
         }
 
         void Alternar(){
