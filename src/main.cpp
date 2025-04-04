@@ -34,3 +34,24 @@ int main(int argc, char const *argv[])
     std::this_thread::sleep_for(0.04s);
   }  
 }
+
+//int main(int argc, char const *argv[]){
+
+//     Serie serieNavidenia;
+
+//     serieNavidenia.Imprimir();
+//     serieNavidenia.EncenderTodo();
+//     serieNavidenia.Imprimir();
+//     serieNavidenia.ApagarTodo();
+//     serieNavidenia.ApagarCantidad(10);
+//     serieNavidenia.EncenderCantidad(3);
+//     serieNavidenia.Imprimir();
+//     serieNavidenia.AlternarEncendido();
+//     serieNavidenia.Imprimir();
+//     serieNavidenia.RecorrerDerecha();
+//     serieNavidenia.Imprimir();
+//     serieNavidenia.RecorrerIzquierda();
+//     serieNavidenia.Imprimir();
+
+//     return 24110235;
+// }
