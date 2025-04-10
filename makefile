@@ -18,15 +18,14 @@ clean :
 	rm $(BIN)/*
 
 #Practicas
-PRACTICAS = ejecutable
-
-EXE2 := $(BIN)/$(PRACTICAS)
-
-$(EXE2) : $(SRC)/memoria.cpp #nombre archivo
-	c++ $< -o $@ $(LIB) $(CXX) -I$(INCLUDE)
-
-run2: $(EXE2)
+practicas: bin/ejecutable
 	./$<
 
-clean2 :
-	rm $(BIN)/*
+bin/ejecutable: src/memoria.cpp
+	c++ $< -o $@ -I$(INCLUDE)
+
+archivo: bin/archivo
+	./$<
+
+bin/archivo: src/archivo.cpp
+	c++ $< -o $@ -I$(INCLUDE)
