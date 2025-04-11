@@ -24,8 +24,16 @@ practicas: bin/ejecutable
 bin/ejecutable: src/memoria.cpp
 	c++ $< -o $@ -I$(INCLUDE)
 
+#receta archivo
 archivo: bin/archivo
 	./$<
 
 bin/archivo: src/archivo.cpp
+	c++ $< -o $@ -I$(INCLUDE)
+
+#archivo binario
+binario: bin/binario
+	./$<
+
+bin/binario: src/binario.cpp
 	c++ $< -o $@ -I$(INCLUDE)
