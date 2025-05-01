@@ -37,3 +37,31 @@ binario: bin/binario
 
 bin/binario: src/binario.cpp
 	c++ $< -o $@ -I$(INCLUDE)
+
+#Practica de listas
+lista: bin/lista
+	./$<
+
+bin/lista: src/list.cpp
+	c++ $< -o $@ -I$(INCLUDE)
+
+#Practica de vector
+vector: bin/vector
+	./$<
+
+bin/vector: src/vector.cpp
+	c++ $< -o $@ -I$(INCLUDE)
+
+#practica map
+map: bin/map
+	./$<
+
+bin/map: src/map.cpp
+	c++ $< -o $@ -I$(INCLUDE)
+
+#practica set
+set: bin/set
+	./$<
+
+bin/set: src/set.cpp
+	c++ $< -o $@ -I$(INCLUDE)
